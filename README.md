@@ -12,3 +12,8 @@ Windows 10/11
 
 # Stellaris version
 4.3.7
+
+![Screenshot 1](screen0.png)
+![Screenshot 2](screen1.png)
+![Screenshot 3](screen2.png)
+![Screenshot 4](screen3.png)
