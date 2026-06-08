@@ -23,6 +23,8 @@ v1.0.1 - Selected map objects now auto-center on the canvas and use stronger vis
 
 If you are having problems dragging stars/etc, zoom in (mouse wheel) closer for fine grain placement
 
+Only stars can be moved directly on the canvas; nebulas, gateways, wormholes, and hyperlanes are adjusted from their respective editing tabs.
+
 # Screenshots
 Create new project and give it a name
 ![Screenshot 1](screen0.png)
