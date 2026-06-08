@@ -31,3 +31,42 @@ Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 1](map-test-triangles.png)
 Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 2](map-test.png)
+
+# Custom Shape Galaxy Tutorial
+
+## 1. Import a Custom Shape Image
+
+1. Open **Stellaris Map Editor**.
+2. Click the **Custom Shapes** menu option.
+3. Click **Add Custom Galaxy Shape**.
+4. Select a black-and-white image to use as a galaxy shape mask.
+   - **White areas** = empty space where no systems will generate.
+   - **Black areas** = valid galaxy space where star systems can generate.
+   - PNG images with strong contrast are recommended.
+
+After importing, the image will appear in the list of available custom shapes.
+
+---
+
+## 2. Generate a Galaxy Using the Imported Shape
+
+1. Click the **Generate** menu option.
+2. Click  **Generate Custom Galaxy**.
+3. In the **Shape Guide** select your custom namde shape from the dropdown list.
+4. Choose the desired:
+   - Galaxy size
+   - Star count
+   - Hyperlane density
+   - Additional generation settings
+
+5. Click **Generate Galaxy**.
+
+---
+
+## 3. Export the Map
+
+1. Review the generated galaxy in the editor viewport.
+2. Click **Export** menu option.
+3. Click **Export Mod** to save the generated galaxy in a Stellaris-compatible format.
+
+Your custom galaxy map is now ready to use in Stellaris.
