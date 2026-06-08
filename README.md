@@ -19,6 +19,8 @@ https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0/Stellaris
 # Screenshots
 Create new project and give it a name
 ![Screenshot 1](screen0.png)
+Import a custom shape image
+![Screenshot 1a](screen0a.png)
 Generate map from custom shape
 ![Screenshot 2](screen1.png)
 In game load custom map (shows up in map size setting)
