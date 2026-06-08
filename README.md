@@ -13,9 +13,10 @@ Windows 10/11
 # Stellaris version
 4.3.7
 
-# Download Link
-https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0/Stellaris_map_editor_v1.zip
+# Download Link (v1.0.1)
+https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.1/Stellaris_map_editor_v101.zip
 
+# Custom Shape Tutorial 
 [Custom Shape Galaxy Tutorial](#custom-shape-galaxy-tutorial)
 
 # Screenshots
