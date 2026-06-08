@@ -51,6 +51,14 @@ Example of editing a system (player system)
 ![Example editing a system](screen4.png)
 Example of generating a galaxy with a custom image
 ![Example of generating a galaxy](screen5.png)
+Example of editing a **hyperlane**
+![Example of editing a hyperlane](screen6.png)
+Example of editing a **nebula**
+![Example of editing a nebula](screen7.png)
+Example of editing a **wormhole**
+![Example of editing a wormhole](screen8.png)
+Example of editing a **gateway**
+![Example of editing a gateway](screen9.png)
 
 # Custom Shape Galaxy Tutorial
 
