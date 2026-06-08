@@ -17,9 +17,15 @@ Windows 10/11
 https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0/Stellaris_map_editor_v1.zip
 
 # Screenshots
+Create new project and give it a name
 ![Screenshot 1](screen0.png)
+Generate map from custom shape
 ![Screenshot 2](screen1.png)
+In game load custom map (shows up in map size setting)
 ![Screenshot 3](screen2.png)
+Example of custom map loaded in game
 ![Screenshot 4](screen3.png)
+Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 1](map-test-triangles.png)
+Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 2](map-test.png)
