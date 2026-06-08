@@ -13,7 +13,7 @@ Windows 10/11
 # Stellaris version
 4.3.7
 
-# Download Link (v1.0.1)
+# Download Link (v1.0.2)
 https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.2/Stellaris_map_editor_v102.zip
 
 v1.0.2 - Added a "Move selected star" button in the star tab, when clicked you can move the selected star.
