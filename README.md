@@ -23,6 +23,8 @@ If you are having problems dragging stars/etc, zoom in (mouse wheel) closer for 
 
 Only stars can be moved directly on the canvas; nebulas, gateways, wormholes, and hyperlanes are adjusted from their respective editing tabs.
 
+In the Hyperlane tab, in the From/To fields you can type a letter repeatedly to search quickly, for example if I am looking for "Sonnet" star as the "TO" target, i will select the field and keep pressing "S" until it locates "Sonnet" in the list.
+
 # Custom Shape Tutorial 
 [Custom Shape Galaxy Tutorial](#custom-shape-galaxy-tutorial)
 
