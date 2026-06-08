@@ -16,6 +16,8 @@ Windows 10/11
 # Download Link
 https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0/Stellaris_map_editor_v1.zip
 
+[Jump to custom shape tutorial](https://github.com/non-npc/Stellaris-Map-Editor#custom-shape-galaxy-tutorial)
+
 # Screenshots
 Create new project and give it a name
 ![Screenshot 1](screen0.png)
