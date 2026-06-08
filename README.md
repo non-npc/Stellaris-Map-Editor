@@ -35,6 +35,8 @@ Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 2](map-test.png)
 Example of editing a system (player system)
 ![Example editing a system](screen4.png)
+Example of generating a galaxy with a custom image
+![Example of generating a galaxy](screen5.png)
 
 # Custom Shape Galaxy Tutorial
 
