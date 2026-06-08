@@ -52,13 +52,13 @@ Example of editing a system (player system)
 Example of generating a galaxy with a custom image
 ![Example of generating a galaxy](screen5.png)
 
-Example of editing a **hyperlane**
+Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then in the **To** field select the target star and click "Add Hyperlane".
 ![Example of editing a hyperlane](screen6.png)
-Example of editing a **nebula**
+Example of editing a **nebula**. To add a nebula, click add and it will add one, then you can edit its x/y and size.
 ![Example of editing a nebula](screen7.png)
-Example of editing a **wormhole**
+Example of editing a **wormhole**. To add a wormhole just select a star in the drop down A+B and click add wormhole.
 ![Example of editing a wormhole](screen8.png)
-Example of editing a **gateway**
+Example of editing a **gateway**.  To add a gateway just select a star in the drop down and click add gateway.
 ![Example of editing a gateway](screen9.png)
 
 # Custom Shape Galaxy Tutorial
