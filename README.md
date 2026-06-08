@@ -13,9 +13,10 @@ Windows 10/11
 # Stellaris version
 4.3.7
 
-# Download Link (v1.0.2)
-https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.2/Stellaris_map_editor_v102.zip
+# Download Link (v1.0.3)
+https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.3/Stellaris_map_editor_v103.zip
 
+v1.0.3 - Fixed a y-axis bug when moving a star
 v1.0.2 - Added a "Move selected star" button in the star tab, when clicked you can move the selected star.
 v1.0.1 - Selected map objects now auto-center on the canvas and use stronger visual highlights so they are easier to find in crowded galaxies.
 
