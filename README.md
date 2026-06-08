@@ -25,7 +25,7 @@ Import a custom shape image
 ![Screenshot 1a](screen0a.png)
 Generate map from custom shape
 ![Screenshot 2](screen1.png)
-In game load custom map (shows up in map size setting)
+In game load custom map (shows up in galaxy size setting)
 ![Screenshot 3](screen2.png)
 Example of custom map loaded in game
 ![Screenshot 4](screen3.png)
