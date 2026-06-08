@@ -52,7 +52,7 @@ After importing, the image will appear in the list of available custom shapes.
 
 1. Click the **Generate** menu option.
 2. Click  **Generate Custom Galaxy**.
-3. In the **Shape Guide** select your custom namde shape from the dropdown list.
+3. In the **Shape Guide** select your custom named shape from the dropdown list.
 4. Choose the desired:
    - Galaxy size
    - Star count
