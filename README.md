@@ -15,6 +15,7 @@ Windows 10/11
 
 # Download Link (v1.0.1)
 https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.1/Stellaris_map_editor_v101.zip
+
 v1.0.1 - Selected map objects now auto-center on the canvas and use stronger visual highlights so they are easier to find in crowded galaxies.
 
 # Custom Shape Tutorial 
