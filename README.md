@@ -33,7 +33,7 @@ Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 1](map-test-triangles.png)
 Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 2](map-test.png)
-Example of editing a system (user system)
+Example of editing a system (player system)
 ![Example editing a system](screen4.png)
 
 # Custom Shape Galaxy Tutorial
