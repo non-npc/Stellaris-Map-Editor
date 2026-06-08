@@ -21,6 +21,8 @@ v1.0.1 - Selected map objects now auto-center on the canvas and use stronger vis
 # Custom Shape Tutorial 
 [Custom Shape Galaxy Tutorial](#custom-shape-galaxy-tutorial)
 
+If you are having problems dragging stars/etc, zoom in (mouse wheel) closer for fine grain placement
+
 # Screenshots
 Create new project and give it a name
 ![Screenshot 1](screen0.png)
