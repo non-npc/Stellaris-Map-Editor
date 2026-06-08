@@ -18,12 +18,13 @@ https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.1/Stellar
 
 v1.0.1 - Selected map objects now auto-center on the canvas and use stronger visual highlights so they are easier to find in crowded galaxies.
 
-# Custom Shape Tutorial 
-[Custom Shape Galaxy Tutorial](#custom-shape-galaxy-tutorial)
-
+# Tips
 If you are having problems dragging stars/etc, zoom in (mouse wheel) closer for fine grain placement
 
 Only stars can be moved directly on the canvas; nebulas, gateways, wormholes, and hyperlanes are adjusted from their respective editing tabs.
+
+# Custom Shape Tutorial 
+[Custom Shape Galaxy Tutorial](#custom-shape-galaxy-tutorial)
 
 # Screenshots
 Create new project and give it a name
