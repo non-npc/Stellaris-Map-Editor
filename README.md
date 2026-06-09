@@ -42,7 +42,7 @@ Generate map from custom shape
 ![Screenshot 2](images/screen1.png)
 In game load custom map (shows up in galaxy size setting)
 ![Screenshot 3](images/screen2.png)
-Example of custom map loaded in game
+Example of custom map loaded in game (600 stars)
 ![Example of custom map loaded in game](images/screen3.png)
 Example custom mask image (1024x1024, black and white)
 ![Custom Sample map 1](images/map-test-triangles.png)
