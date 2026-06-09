@@ -52,6 +52,7 @@ Example of editing a system (player system)
 ![Example editing a system](screen4.png)
 Example of generating a galaxy with a custom image
 ![Example of generating a galaxy](screen5.png)
+
 Example of Advanced settings for galaxy generation
 ![Example of generating a galaxy - Advanced settings](screen5a.png)
 
