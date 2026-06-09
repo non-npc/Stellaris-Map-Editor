@@ -60,7 +60,7 @@ Example of Advanced settings for galaxy generation
 
 Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then once it appears in the **From** field select your other star and it will appear in the **To** field then click "Add Hyperlane", then it will appear in the list and the hyperlane will appear on the canvas.
 ![Example of editing a hyperlane](images/screen6.png)
-Example of editing a **nebula**. To add a nebula, click add and it will add one, then you can edit its x/y and size.
+Example of editing a **nebula**. To add a nebula, click add and it will add one (at 0,0), then you can edit its x/y and size.
 ![Example of editing a nebula](images/screen7.png)
 Example of editing a **wormhole**. To add a wormhole just select a star in the drop down A+B and click add wormhole.
 ![Example of editing a wormhole](images/screen8.png)
