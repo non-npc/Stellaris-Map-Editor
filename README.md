@@ -68,6 +68,8 @@ Example of editing a **gateway**.  To add a gateway just select a star in the dr
 ![Example of editing a gateway](screen9.png)
 Example of a custom galaxy shape
 ![Example of a custom galaxy shape](example-shape.png)
+Example of a 2000 star custom galaxy in-game
+![Example of a 2000 star custom galaxy in-game](2000_stars.png)
 
 # Custom Shape Galaxy Tutorial
 
