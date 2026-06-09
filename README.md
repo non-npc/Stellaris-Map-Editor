@@ -1,113 +1,377 @@
 # Stellaris Map Editor
-Stellaris Map Editor is a standalone custom galaxy creation and editing tool for Stellaris that allows players and modders to design, generate, edit, and export fully customized galaxy maps with complete visual control. The application features an interactive editor where users can create and modify star systems, hyperlanes, nebulas, wormholes, clusters, and other galactic structures while visually shaping the galaxy in real time. Users can generate procedural galaxies or import custom image masks to create galaxies shaped like symbols, logos, geometric forms, or unique artistic designs, with automatic scaling based on selected galaxy size and star count.
 
-To create a custom galaxy mask is really simple:
-- Create a 1024x1024 PNG image 
-- Give it a transparent or white BG
-- Paint in black the areas you want for your galaxy shape, save file
-- In the editor, Import your PNG and set the default galaxy size for the image.
+<p align="center">
+  <img src="images/example-shape.png" width="700">
+</p>
 
-# Works on 
-Windows 10/11
+<p align="center">
+  <b>Custom Galaxy Creation & Editing Toolkit for Stellaris</b><br>
+  Design, generate, edit, and export fully customized Stellaris galaxy maps with complete visual control.
+</p>
 
-# Stellaris version
-4.3.7
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
+  <img src="https://img.shields.io/badge/Stellaris-4.3.7-orange">
+  <img src="https://img.shields.io/badge/version-1.0.4-green">
+</p>
 
-# Download Link (v1.0.4)
-https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellaris_map_editor_v104.zip
+---
 
-- v1.0.4 - Hyperlanes tab: clicking a second star on the map now fills To and selects the matching hyperlane in the list when one exists, and Delete Selected removes the lane between From and To instead of whichever row was highlighted in the list.
-- v1.0.3 - Fixed a y-axis bug when moving a star
-- v1.0.2 - Added a "Move selected star" button in the star tab, when clicked you can move the selected star.
-- v1.0.1 - Selected map objects now auto-center on the canvas and use stronger visual highlights so they are easier to find in crowded galaxies.
+# Download
 
-# Tips
-If you are having problems dragging stars/etc, zoom in (mouse wheel) closer for fine grain placement
+## Latest Release (v1.0.4)
 
-You can pan around the map with the cursor by clicking empty space in the map and dragging (except inside nebulas).
+[Download Stellaris Map Editor v1.0.4](https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellaris_map_editor_v104.zip)
 
-Only stars can be moved directly on the canvas; nebulas, gateways, wormholes, and hyperlanes are adjusted from their respective editing tabs.
+---
 
-In the Hyperlane tab, in the From/To fields you can type a letter repeatedly to search quickly, for example if I am looking for "Sonnet" star as the "TO" target, i will select the field and keep pressing "S" until it locates "Sonnet" in the list.
+# Features
 
-# Custom Shape Tutorial 
-[Custom Shape Galaxy Tutorial](#custom-shape-galaxy-tutorial)
+- Interactive real-time galaxy editor
+- Procedural galaxy generation
+- Custom PNG galaxy shape masks
+- Hyperlane editing
+- Wormhole editing
+- Gateway editing
+- Nebula editing
+- Star system editing
+- Advanced galaxy generation settings
+- Real-time visual galaxy preview
+- Export directly into Stellaris-compatible mod format
+- Supports symbolic and geometric galaxy layouts
+- Automatic galaxy scaling based on star count and galaxy size
 
-# Screenshots
-Create new project and give it a name
-![Screenshot 1](images/screen0.png)
-Import a custom shape image
-![Screenshot 1a](images/screen0a.png)
-Generate map from custom shape
-![Screenshot 2](images/screen1.png)
-In game load custom map (shows up in galaxy size setting)
-![Screenshot 3](images/screen2.png)
-Example of custom map loaded in game (600 stars)
-![Example of custom map loaded in game](images/screen3.png)
-Example custom mask image (1024x1024, black and white)
-![Custom Sample map 1](images/map-test-triangles.png)
-Example custom mask image (1024x1024, black and white)
-![Custom Sample map 2](images/map-test.png)
-Example custom mask image (1024x1024, black and white)
-![Custom Sample map 3](images/map-test-liquid.png)
-Example of editing a system (player system)
-![Example editing a system](images/screen4.png)
-Example of generating a galaxy with a custom image
-![Example of generating a galaxy](images/screen5.png)
+---
 
-Example of Advanced settings for galaxy generation
-![Example of generating a galaxy - Advanced settings](images/screen5a.png)
+# Table of Contents
 
-Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then once it appears in the **From** field select your other star and it will appear in the **To** field then click "Add Hyperlane", then it will appear in the list and the hyperlane will appear on the canvas.
-![Example of editing a hyperlane](images/screen6.png)
-Example of editing a **nebula**. To add a nebula, click add and it will add one (at 0,0), then you can edit its x/y and size.
-![Example of editing a nebula](images/screen7.png)
-Example of editing a **wormhole**. To add a wormhole just select a star in the drop down A+B and click add wormhole.
-![Example of editing a wormhole](images/screen8.png)
-Example of editing a **gateway**.  To add a gateway just select a star in the drop down and click add gateway.
-![Example of editing a gateway](images/screen9.png)
-Example of a custom galaxy shape
-![Example of a custom galaxy shape](images/example-shape.png)
-Example of a 2000 star custom galaxy in-game
-![Example of a 2000 star custom galaxy in-game](images/2000_stars.png)
-Example of a 1000 star custom galaxy in-game
-![Example of a 1000 star custom galaxy in-game](images/chokepoint_screenshot.png)
+- [Quick Start](#quick-start)
+- [Custom Galaxy Shapes](#custom-galaxy-shapes)
+- [Screenshots](#screenshots)
+- [Editing Features](#editing-features)
+- [Tips](#tips)
+- [Known Limitations](#known-limitations)
+- [Version History](#version-history)
+
+---
+
+# Works On
+
+- Windows 10
+- Windows 11
+
+---
+
+# Stellaris Version
+
+- Stellaris 4.3.7
+
+---
+
+# Quick Start
+
+## 1. Create a New Project
+
+Launch the editor and create a new galaxy project.
+
+## 2. Generate or Import a Galaxy Shape
+
+You can either:
+- Generate a procedural galaxy
+- Import a custom PNG mask shape
+
+## 3. Edit the Galaxy
+
+Modify:
+- Stars
+- Hyperlanes
+- Nebulas
+- Wormholes
+- Gateways
+- Clusters
+
+## 4. Export the Galaxy
+
+Export directly into a playable Stellaris mod format.
+
+---
+
+# Custom Galaxy Shapes
+
+Stellaris Map Editor supports fully custom galaxy layouts using black-and-white PNG mask images.
+
+You can create:
+- Symbols
+- Logos
+- Geometric patterns
+- Chokepoint maps
+- Artistic galaxy designs
+- Hand-drawn galaxy layouts
+
+---
+
+# Creating a Custom Shape Mask
+
+Creating a custom galaxy shape is simple:
+
+1. Create a `1024x1024` PNG image
+2. Use a transparent or white background
+3. Paint the desired galaxy area in black
+4. Save the PNG image
+5. Import it into the editor
+
+### Mask Rules
+
+| Color | Result |
+|---|---|
+| Black | Valid galaxy generation area |
+| White / Transparent | Empty space |
+
+---
 
 # Custom Shape Galaxy Tutorial
 
-## 1. Import a Custom Shape Image
+## Step 1 — Import a Shape
 
-1. Open **Stellaris Map Editor**.
-2. Click the **Custom Shapes** menu option.
-3. Click **Add Custom Galaxy Shape**.
-4. Select a black-and-white image to use as a galaxy shape mask.
-   - **White areas** = empty space where no systems will generate.
-   - **Black areas** = valid galaxy space where star systems can generate.
-   - PNG images with strong contrast are recommended.
+1. Open **Stellaris Map Editor**
+2. Open the **Custom Shapes** menu
+3. Click **Add Custom Galaxy Shape**
+4. Select your PNG mask image
 
-After importing, the image will appear in the list of available custom shapes.
+The shape will appear in the custom shape list.
 
 ---
 
-## 2. Generate a Galaxy Using the Imported Shape
+## Step 2 — Generate the Galaxy
 
-1. Click the **Generate** menu option.
-2. Click  **Generate Custom Galaxy**.
-3. In the **Shape Guide** select your custom named shape from the dropdown list.
-4. Choose the desired:
+1. Open the **Generate** menu
+2. Click **Generate Custom Galaxy**
+3. Select your imported shape
+4. Choose:
    - Galaxy size
    - Star count
    - Hyperlane density
-   - Additional generation settings
+   - Additional settings
+5. Click **Generate Galaxy**
 
-5. Click **Generate Galaxy**.
+The editor will automatically scale the shape based on the selected galaxy size and star count.
 
 ---
 
-## 3. Export the Map
+## Step 3 — Export the Galaxy
 
-1. Review the generated galaxy in the editor viewport.
-2. Click **Export** menu option.
-3. Click **Export Mod** to save the generated galaxy in a Stellaris-compatible format.
+1. Review the generated galaxy
+2. Open the **Export** menu
+3. Click **Export Mod**
 
-Your custom galaxy map is now ready to use in Stellaris.
+Your custom galaxy is now ready for Stellaris.
+
+---
+
+# Screenshots
+
+## Create a New Project
+
+![Create Project](images/screen0.png)
+
+---
+
+## Import a Custom Shape
+
+![Import Shape](images/screen0a.png)
+
+---
+
+## Generate a Galaxy from a Shape
+
+![Generate Shape](images/screen1.png)
+
+---
+
+## Load the Galaxy In-Game
+
+![In Game](images/screen2.png)
+
+---
+
+## Example Custom Galaxy
+
+![Custom Galaxy](images/screen3.png)
+
+---
+
+## Example Custom Mask Images
+
+### Triangle Shape
+
+![Triangle Shape](images/map-test-triangles.png)
+
+### Abstract Shape
+
+![Abstract Shape](images/map-test.png)
+
+### Liquid Shape
+
+![Liquid Shape](images/map-test-liquid.png)
+
+---
+
+## Editing a Star System
+
+![System Editing](images/screen4.png)
+
+---
+
+## Advanced Galaxy Generation Settings
+
+![Advanced Settings](images/screen5a.png)
+
+---
+
+## Hyperlane Editing
+
+To create a hyperlane:
+1. Select the first star
+2. Select the second star
+3. Click **Add Hyperlane**
+
+![Hyperlane Editing](images/screen6.png)
+
+---
+
+## Nebula Editing
+
+Nebulas can be added and resized from the Nebula tab.
+
+![Nebula Editing](images/screen7.png)
+
+---
+
+## Wormhole Editing
+
+Select two stars and create a wormhole pair.
+
+![Wormhole Editing](images/screen8.png)
+
+---
+
+## Gateway Editing
+
+Select a star and add a gateway.
+
+![Gateway Editing](images/screen9.png)
+
+---
+
+## Large Galaxy Examples
+
+### 2000 Star Galaxy
+
+![2000 Stars](images/2000_stars.png)
+
+### 1000 Star Chokepoint Galaxy
+
+![1000 Stars](images/chokepoint_screenshot.png)
+
+---
+
+# Editing Features
+
+## Star Editing
+
+- Create stars
+- Move stars
+- Rename stars
+- Modify system data
+- Configure planets and moons
+
+## Hyperlane Editing
+
+- Create hyperlanes
+- Remove hyperlanes
+- Quickly search systems using keyboard shortcuts
+
+## Nebula Editing
+
+- Create nebulas
+- Resize nebulas
+- Reposition nebulas
+
+## Wormhole Editing
+
+- Create paired wormholes
+- Configure wormhole endpoints
+
+## Gateway Editing
+
+- Add gateways to systems
+- Configure gateway placement
+
+---
+
+# Tips
+
+## Moving Objects
+
+If objects are difficult to drag:
+- Zoom in using the mouse wheel
+- Fine placement becomes much easier when zoomed closer
+
+---
+
+## Panning the Map
+
+Click and drag empty space to pan around the galaxy.
+
+---
+
+## Searching for Systems
+
+In dropdown fields you can repeatedly press a letter to quickly cycle through matching system names.
+
+Example:
+- Press `S` repeatedly to quickly locate systems beginning with `S`
+
+---
+
+# Known Limitations
+
+- Only stars can currently be moved directly on the canvas
+- Nebulas, wormholes, gateways, and hyperlanes are edited from their respective tabs
+- Very large galaxies may take longer to generate (2000 stars take about 45s-60s)
+
+---
+
+# Version History
+
+## v1.0.4
+
+- Hyperlanes tab improvements
+- Selecting a second star now automatically fills the **To** field
+- Existing hyperlanes auto-select in the list
+- Delete Selected now removes the lane between From and To
+
+## v1.0.3
+
+- Fixed a y-axis bug when moving stars
+
+## v1.0.2
+
+- Added **Move Selected Star** button
+
+## v1.0.1
+
+- Selected objects now auto-center on the canvas
+- Improved visual highlights for selected objects
+
+---
+
+# Credits
+
+Created for the Stellaris modding community.
+
+---
+
+# License
+
+This project is provided as-is for personal and community use.
