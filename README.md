@@ -56,7 +56,7 @@ Example of generating a galaxy with a custom image
 Example of Advanced settings for galaxy generation
 ![Example of generating a galaxy - Advanced settings](screen5a.png)
 
-Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then in the **To** field select the target star and click "Add Hyperlane".
+Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then once it appears in the **From** field select your other star and it will appear in the **To** field then click "Add Hyperlane", then it will appear in the list and the hyperlane will appear on the canvas.
 ![Example of editing a hyperlane](screen6.png)
 Example of editing a **nebula**. To add a nebula, click add and it will add one, then you can edit its x/y and size.
 ![Example of editing a nebula](screen7.png)
