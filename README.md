@@ -347,7 +347,7 @@ Example:
 
 ## v1.0.4
 
-- Hyperlanes tab improvements
+Hyperlanes tab improvements
 - Selecting a second star now automatically fills the **To** field
 - Existing hyperlanes auto-select in the list
 - Delete Selected now removes the lane between From and To
