@@ -70,6 +70,8 @@ Example of a custom galaxy shape
 ![Example of a custom galaxy shape](images/example-shape.png)
 Example of a 2000 star custom galaxy in-game
 ![Example of a 2000 star custom galaxy in-game](images/2000_stars.png)
+Example of a 1000 star custom galaxy in-game
+![Example of a 1000 star custom galaxy in-game](images/chokepoint_screenshot.png)
 
 # Custom Shape Galaxy Tutorial
 
