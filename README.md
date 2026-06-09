@@ -35,41 +35,41 @@ In the Hyperlane tab, in the From/To fields you can type a letter repeatedly to 
 
 # Screenshots
 Create new project and give it a name
-![Screenshot 1](screen0.png)
+![Screenshot 1](images/screen0.png)
 Import a custom shape image
-![Screenshot 1a](screen0a.png)
+![Screenshot 1a](images/screen0a.png)
 Generate map from custom shape
-![Screenshot 2](screen1.png)
+![Screenshot 2](images/screen1.png)
 In game load custom map (shows up in galaxy size setting)
-![Screenshot 3](screen2.png)
+![Screenshot 3](images/screen2.png)
 Example of custom map loaded in game
-![Screenshot 4](screen3.png)
+![Screenshot 4](images/screen3.png)
 Example custom mask image (1024x1024, black and white)
-![Custom Sample map 1](map-test-triangles.png)
+![Custom Sample map 1](images/map-test-triangles.png)
 Example custom mask image (1024x1024, black and white)
-![Custom Sample map 2](map-test.png)
+![Custom Sample map 2](images/map-test.png)
 Example custom mask image (1024x1024, black and white)
-![Custom Sample map 3](map-test-liquid.png)
+![Custom Sample map 3](images/map-test-liquid.png)
 Example of editing a system (player system)
-![Example editing a system](screen4.png)
+![Example editing a system](images/screen4.png)
 Example of generating a galaxy with a custom image
-![Example of generating a galaxy](screen5.png)
+![Example of generating a galaxy](images/screen5.png)
 
 Example of Advanced settings for galaxy generation
-![Example of generating a galaxy - Advanced settings](screen5a.png)
+![Example of generating a galaxy - Advanced settings](images/screen5a.png)
 
 Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then once it appears in the **From** field select your other star and it will appear in the **To** field then click "Add Hyperlane", then it will appear in the list and the hyperlane will appear on the canvas.
-![Example of editing a hyperlane](screen6.png)
+![Example of editing a hyperlane](images/screen6.png)
 Example of editing a **nebula**. To add a nebula, click add and it will add one, then you can edit its x/y and size.
-![Example of editing a nebula](screen7.png)
+![Example of editing a nebula](images/screen7.png)
 Example of editing a **wormhole**. To add a wormhole just select a star in the drop down A+B and click add wormhole.
-![Example of editing a wormhole](screen8.png)
+![Example of editing a wormhole](images/screen8.png)
 Example of editing a **gateway**.  To add a gateway just select a star in the drop down and click add gateway.
-![Example of editing a gateway](screen9.png)
+![Example of editing a gateway](images/screen9.png)
 Example of a custom galaxy shape
-![Example of a custom galaxy shape](example-shape.png)
+![Example of a custom galaxy shape](images/example-shape.png)
 Example of a 2000 star custom galaxy in-game
-![Example of a 2000 star custom galaxy in-game](2000_stars.png)
+![Example of a 2000 star custom galaxy in-game](images/2000_stars.png)
 
 # Custom Shape Galaxy Tutorial
 
