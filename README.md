@@ -249,7 +249,7 @@ Nebulas can be added and resized from the Nebula tab.
 
 ## Wormhole Editing
 
-Select two stars and create a wormhole pair.
+Select two stars (from drop downs) and create a wormhole pair.
 
 ![Wormhole Editing](images/screen8.png)
 
@@ -257,7 +257,7 @@ Select two stars and create a wormhole pair.
 
 ## Gateway Editing
 
-Select a star and add a gateway.
+Select a star (from drop down) and add a gateway.
 
 ![Gateway Editing](images/screen9.png)
 
@@ -319,7 +319,7 @@ If objects are difficult to drag:
 
 ---
 
-## Panning the Map
+## Panning the Map (in star tab only)
 
 Click and drag empty space to pan around the galaxy.
 
