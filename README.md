@@ -312,6 +312,11 @@ Select a star (from drop down) and add a gateway.
 
 # Tips
 
+## Planet classes and initializer
+
+You can find the list of valid planet classes and initializers and more at the official wiki
+https://productionwiki-stellaris.paradoxwikis.com/index.php?title=Empire_modding
+
 ## Moving Objects
 
 If objects are difficult to drag:
