@@ -242,7 +242,7 @@ To create a hyperlane:
 
 ## Nebula Editing
 
-Nebulas can be added and resized from the Nebula tab.
+Nebulas can be added and resized from the Nebula tab. Adding a nebula will position it at 0,0 then you can change its x/y and size.
 
 ![Nebula Editing](images/screen7.png)
 
