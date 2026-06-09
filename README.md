@@ -345,6 +345,7 @@ Example:
 - Only stars can currently be moved directly on the canvas
 - Nebulas, wormholes, gateways, and hyperlanes are edited from their respective tabs
 - Very large galaxies may take longer to generate (2000 stars take about 45s-60s)
+- After editing an object, you need to reselect it to edit it again. This may be changed in the future.
 
 ---
 
