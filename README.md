@@ -73,12 +73,13 @@
 ## 1. Create a New Project
 
 Launch the editor and create a new galaxy project.
+The **project name** is used as the mod name when exported.
 
 ## 2. Generate or Import a Galaxy Shape
 
 You can either:
 - Generate a procedural galaxy
-- Import a custom PNG mask shape
+- Import a custom PNG mask shape (1024x1024)
 
 ## 3. Edit the Galaxy
 
