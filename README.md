@@ -13,9 +13,10 @@ Windows 10/11
 # Stellaris version
 4.3.7
 
-# Download Link (v1.0.3)
-https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.3/Stellaris_map_editor_v103.zip
+# Download Link (v1.0.4)
+https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellaris_map_editor_v104.zip
 
+- v1.0.4 - Hyperlanes tab: clicking a second star on the map now fills To and selects the matching hyperlane in the list when one exists, and Delete Selected removes the lane between From and To instead of whichever row was highlighted in the list.
 - v1.0.3 - Fixed a y-axis bug when moving a star
 - v1.0.2 - Added a "Move selected star" button in the star tab, when clicked you can move the selected star.
 - v1.0.1 - Selected map objects now auto-center on the canvas and use stronger visual highlights so they are easier to find in crowded galaxies.
