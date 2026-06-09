@@ -52,6 +52,8 @@ Example of editing a system (player system)
 ![Example editing a system](screen4.png)
 Example of generating a galaxy with a custom image
 ![Example of generating a galaxy](screen5.png)
+Example of Advanced settings for galaxy generation
+![Example of generating a galaxy - Advanced settings](screen5a.png)
 
 Example of editing a **hyperlane**. To add a hyperlane, select a star on the canvas then in the **To** field select the target star and click "Add Hyperlane".
 ![Example of editing a hyperlane](screen6.png)
