@@ -66,6 +66,8 @@ Example of editing a **wormhole**. To add a wormhole just select a star in the d
 ![Example of editing a wormhole](screen8.png)
 Example of editing a **gateway**.  To add a gateway just select a star in the drop down and click add gateway.
 ![Example of editing a gateway](screen9.png)
+Example of a custom galaxy shape
+![Example of a custom galaxy shape](example-shape.png)
 
 # Custom Shape Galaxy Tutorial
 
