@@ -24,7 +24,7 @@ https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellar
 # Tips
 If you are having problems dragging stars/etc, zoom in (mouse wheel) closer for fine grain placement
 
-You can pan around the map with the cursor by clicking empty space in the map and dragging.
+You can pan around the map with the cursor by clicking empty space in the map and dragging (except inside nebulas).
 
 Only stars can be moved directly on the canvas; nebulas, gateways, wormholes, and hyperlanes are adjusted from their respective editing tabs.
 
