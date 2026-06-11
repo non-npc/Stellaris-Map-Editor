@@ -8,11 +8,14 @@
     <meta name="description" content="Custom Galaxy Creation & Editing Toolkit for Stellaris. Design, generate, edit, and export fully customized Stellaris galaxy maps.">
     <meta property="og:title" content="Stellaris Map Editor">
     <meta property="og:description" content="Create procedural and custom Stellaris galaxies with full visual editing tools.">
-    <meta property="og:image" content="../images/example-shape.png">
-
+    <meta property="og:image" content="../images/thumbnail.png">
     <style>
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -43,37 +46,44 @@
         .hero {
             text-align: center;
             padding-top: 30px;
-            padding-bottom: 40px;
+            padding-bottom: 50px;
         }
 
-        .hero img {
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        .hero-image {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 14px;
+            border: 1px solid #1f2b3f;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
         }
 
         h1 {
-            font-size: 56px;
+            font-size: 58px;
             margin-bottom: 10px;
             color: #ffffff;
         }
 
         h2 {
-            margin-top: 70px;
-            font-size: 36px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-size: 38px;
             color: #ffffff;
-            border-bottom: 2px solid #1f2a3b;
-            padding-bottom: 10px;
+            border-bottom: 2px solid #1f2b3f;
+            padding-bottom: 12px;
         }
 
         h3 {
             margin-top: 40px;
-            font-size: 26px;
             color: #ffffff;
+            font-size: 28px;
         }
 
         p {
             color: #c9d4e8;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         .subtitle {
@@ -82,43 +92,39 @@
             margin-bottom: 30px;
         }
 
-        .badges {
-            margin-top: 20px;
-        }
-
         .badges img {
-            margin: 5px;
+            margin: 4px;
         }
 
         .download-box {
-            background: #121927;
-            border: 1px solid #263248;
-            border-radius: 12px;
-            padding: 25px;
+            background: #111927;
+            border: 1px solid #223048;
+            border-radius: 14px;
+            padding: 30px;
             margin-top: 25px;
         }
 
         .download-btn {
             display: inline-block;
+            margin-top: 20px;
             background: #2c7be5;
             color: white;
-            padding: 16px 28px;
-            border-radius: 8px;
+            padding: 16px 30px;
+            border-radius: 10px;
             font-weight: bold;
-            margin-top: 10px;
             transition: 0.2s ease;
         }
 
         .download-btn:hover {
-            background: #4892f0;
+            background: #4b96ff;
             text-decoration: none;
         }
 
         .toc {
-            background: #121927;
-            border-radius: 12px;
+            background: #111927;
+            border: 1px solid #1f2b3f;
+            border-radius: 14px;
             padding: 25px;
-            margin-top: 30px;
         }
 
         .toc ul {
@@ -127,7 +133,7 @@
         }
 
         .toc li {
-            margin: 10px 0;
+            margin-bottom: 12px;
         }
 
         .feature-grid {
@@ -138,10 +144,10 @@
         }
 
         .feature-card {
-            background: #121927;
-            border: 1px solid #1e293b;
-            border-radius: 12px;
-            padding: 20px;
+            background: #111927;
+            border: 1px solid #1f2b3f;
+            border-radius: 14px;
+            padding: 24px;
         }
 
         .feature-card h3 {
@@ -150,26 +156,34 @@
         }
 
         .screenshot {
-            margin-top: 40px;
+            margin-top: 55px;
+            text-align: center;
+        }
+
+        .screenshot-title {
+            font-size: 24px;
+            margin-bottom: 18px;
+            color: #ffffff;
         }
 
         .screenshot img {
             width: 100%;
+            max-width: 720px;
             border-radius: 12px;
-            border: 1px solid #1e293b;
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            border: 1px solid #1f2b3f;
+            box-shadow: 0 0 24px rgba(0,0,0,0.45);
+            cursor: zoom-in;
+            transition: transform 0.2s ease;
         }
 
-        .screenshot-title {
-            margin-top: 15px;
-            font-size: 22px;
-            color: #ffffff;
+        .screenshot img:hover {
+            transform: scale(1.01);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         table th,
@@ -180,42 +194,31 @@
         }
 
         table th {
-            background: #182235;
-        }
-
-        ul li {
-            margin-bottom: 10px;
+            background: #172234;
         }
 
         code {
-            background: #1a2333;
+            background: #172234;
             padding: 3px 7px;
             border-radius: 5px;
-            color: #9fd0ff;
+            color: #9ecfff;
+        }
+
+        .tips-box,
+        .version-box {
+            background: #111927;
+            border: 1px solid #223048;
+            border-radius: 14px;
+            padding: 24px;
+            margin-top: 25px;
         }
 
         .footer {
+            margin-top: 120px;
+            padding-top: 40px;
+            border-top: 1px solid #1f2b3f;
             text-align: center;
-            margin-top: 100px;
-            padding: 40px;
-            border-top: 1px solid #1e293b;
-            color: #7c8aa5;
-        }
-
-        .version-box {
-            background: #121927;
-            border-left: 5px solid #2c7be5;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-
-        .tips-box {
-            background: #101926;
-            border: 1px solid #25354f;
-            border-radius: 12px;
-            padding: 25px;
-            margin-top: 20px;
+            color: #7f8da7;
         }
 
         @media(max-width: 768px) {
@@ -230,9 +233,14 @@
             .subtitle {
                 font-size: 18px;
             }
+
+            .screenshot img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
@@ -244,7 +252,7 @@
             Custom Galaxy Creation & Editing Toolkit for Stellaris
         </p>
 
-        <img src="images/example-shape.png" alt="Stellaris Map Editor">
+        <img src="images/thumbnail.png" class="hero-image" alt="Stellaris Map Editor">
 
         <div class="badges">
             <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
@@ -253,19 +261,19 @@
         </div>
     </section>
 
-    <section id="download">
+    <section>
         <h2>Download</h2>
 
         <div class="download-box">
             <h3>Latest Release (v1.0.4)</h3>
 
             <p>
-                Download the latest release of Stellaris Map Editor for Windows.
+                Download the latest Windows release of Stellaris Map Editor.
             </p>
 
             <a class="download-btn"
                href="https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellaris_map_editor_v104.zip">
-                Download v1.0.4
+                Download Stellaris Map Editor v1.0.4
             </a>
         </div>
     </section>
@@ -279,46 +287,30 @@
                 <h3>Galaxy Generation</h3>
                 <p>
                     Generate procedural galaxies with advanced controls for size,
-                    density, spacing, and layout behavior.
+                    density, scaling, spacing, and cluster behavior.
                 </p>
             </div>
 
             <div class="feature-card">
                 <h3>Custom Shape Masks</h3>
                 <p>
-                    Import black-and-white PNG masks to create symbolic,
-                    geometric, or artistic galaxy layouts.
+                    Import PNG masks to create symbolic, geometric, chokepoint,
+                    and artistic galaxy layouts.
                 </p>
             </div>
 
             <div class="feature-card">
-                <h3>Hyperlane Editing</h3>
+                <h3>Visual Editing</h3>
                 <p>
-                    Visually create, modify, and remove hyperlane connections
-                    between systems.
+                    Edit stars, hyperlanes, nebulas, gateways, and wormholes
+                    directly through an interactive visual interface.
                 </p>
             </div>
 
             <div class="feature-card">
-                <h3>Wormholes & Gateways</h3>
+                <h3>Mod Exporting</h3>
                 <p>
-                    Add strategic infrastructure including gateways and
-                    paired wormholes.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Real-Time Preview</h3>
-                <p>
-                    View and modify galaxies live using an interactive
-                    visual editor.
-                </p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Direct Mod Export</h3>
-                <p>
-                    Export playable Stellaris-compatible galaxy mods
+                    Export fully playable Stellaris-compatible galaxy mods
                     directly from the editor.
                 </p>
             </div>
@@ -332,7 +324,7 @@
         <div class="toc">
             <ul>
                 <li><a href="#quickstart">Quick Start</a></li>
-                <li><a href="#shapes">Custom Galaxy Shapes</a></li>
+                <li><a href="#customshapes">Custom Galaxy Shapes</a></li>
                 <li><a href="#screenshots">Screenshots</a></li>
                 <li><a href="#editing">Editing Features</a></li>
                 <li><a href="#tips">Tips</a></li>
@@ -346,6 +338,7 @@
         <h2>Quick Start</h2>
 
         <h3>1. Create a New Project</h3>
+
         <p>
             Launch the editor and create a new galaxy project.
             The project name becomes the exported mod name.
@@ -376,7 +369,7 @@
         </p>
     </section>
 
-    <section id="shapes">
+    <section id="customshapes">
         <h2>Custom Galaxy Shapes</h2>
 
         <p>
@@ -417,64 +410,103 @@
         <h2>Screenshots</h2>
 
         <div class="screenshot">
+            <div class="screenshot-title">Example Shape</div>
+            <a href="images/example-shape.png" target="_blank">
+                <img src="images/example-shape.png" alt="Example Shape">
+            </a>
+        </div>
+
+        <div class="screenshot">
             <div class="screenshot-title">Create a New Project</div>
-            <img src="images/screen0.png">
+            <a href="images/screen0.png" target="_blank">
+                <img src="images/screen0.png" alt="Create Project">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Import a Custom Shape</div>
-            <img src="images/screen0a.png">
+            <a href="images/screen0a.png" target="_blank">
+                <img src="images/screen0a.png" alt="Import Shape">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Generate a Galaxy from a Shape</div>
-            <img src="images/screen1.png">
+            <a href="images/screen1.png" target="_blank">
+                <img src="images/screen1.png" alt="Generate Shape">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Load the Galaxy In-Game</div>
-            <img src="images/screen2.png">
+            <a href="images/screen2.png" target="_blank">
+                <img src="images/screen2.png" alt="In Game">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Example Custom Galaxy</div>
-            <img src="images/screen3.png">
+            <a href="images/screen3.png" target="_blank">
+                <img src="images/screen3.png" alt="Custom Galaxy">
+            </a>
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Editing a Star System</div>
+            <a href="images/screen4.png" target="_blank">
+                <img src="images/screen4.png" alt="System Editing">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Advanced Galaxy Generation Settings</div>
-            <img src="images/screen5a.png">
+            <a href="images/screen5a.png" target="_blank">
+                <img src="images/screen5a.png" alt="Advanced Settings">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Hyperlane Editing</div>
-            <img src="images/screen6.png">
+            <a href="images/screen6.png" target="_blank">
+                <img src="images/screen6.png" alt="Hyperlane Editing">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Nebula Editing</div>
-            <img src="images/screen7.png">
+            <a href="images/screen7.png" target="_blank">
+                <img src="images/screen7.png" alt="Nebula Editing">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Wormhole Editing</div>
-            <img src="images/screen8.png">
+            <a href="images/screen8.png" target="_blank">
+                <img src="images/screen8.png" alt="Wormhole Editing">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">Gateway Editing</div>
-            <img src="images/screen9.png">
+            <a href="images/screen9.png" target="_blank">
+                <img src="images/screen9.png" alt="Gateway Editing">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">2000 Star Galaxy</div>
-            <img src="images/2000_stars.png">
+            <a href="images/2000_stars.png" target="_blank">
+                <img src="images/2000_stars.png" alt="2000 Stars">
+            </a>
         </div>
 
         <div class="screenshot">
             <div class="screenshot-title">1000 Star Chokepoint Galaxy</div>
-            <img src="images/chokepoint_screenshot.png">
+            <a href="images/chokepoint_screenshot.png" target="_blank">
+                <img src="images/chokepoint_screenshot.png" alt="Chokepoint Galaxy">
+            </a>
         </div>
+
     </section>
 
     <section id="editing">
@@ -500,7 +532,7 @@
                 <ul>
                     <li>Create hyperlanes</li>
                     <li>Remove hyperlanes</li>
-                    <li>Quick system searching</li>
+                    <li>Quickly search systems using keyboard shortcuts</li>
                 </ul>
             </div>
 
@@ -519,7 +551,7 @@
 
                 <ul>
                     <li>Create paired wormholes</li>
-                    <li>Configure endpoints</li>
+                    <li>Configure wormhole endpoints</li>
                 </ul>
             </div>
 
@@ -527,8 +559,8 @@
                 <h3>Gateway Editing</h3>
 
                 <ul>
-                    <li>Add gateways</li>
-                    <li>Configure placements</li>
+                    <li>Add gateways to systems</li>
+                    <li>Configure gateway placement</li>
                 </ul>
             </div>
 
@@ -540,15 +572,15 @@
 
         <div class="tips-box">
 
-            <h3>Planet Classes & Initializers</h3>
+            <h3>Planet Classes and Initializers</h3>
 
             <p>
-                You can find valid planet classes and initializers on the
+                You can find valid planet classes and initializers at the
                 official Stellaris modding wiki:
             </p>
 
             <p>
-                <a href="https://productionwiki-stellaris.paradoxwikis.com/index.php?title=Empire_modding">
+                <a href="https://productionwiki-stellaris.paradoxwikis.com/index.php?title=Empire_modding" target="_blank">
                     Stellaris Empire Modding Wiki
                 </a>
             </p>
@@ -568,8 +600,8 @@
             <h3>Searching for Systems</h3>
 
             <p>
-                Repeatedly press a letter key inside dropdown fields to
-                quickly cycle through matching system names.
+                Repeatedly press a letter key inside dropdown fields to quickly
+                cycle through matching system names.
             </p>
 
         </div>
@@ -624,6 +656,7 @@
                 <li>Improved visual highlights</li>
             </ul>
         </div>
+
     </section>
 
     <div class="footer">
