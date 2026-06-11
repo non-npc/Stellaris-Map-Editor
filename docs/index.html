@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaris Map Editor</title>
+
+    <meta name="description" content="Custom Galaxy Creation & Editing Toolkit for Stellaris. Design, generate, edit, and export fully customized Stellaris galaxy maps.">
+    <meta property="og:title" content="Stellaris Map Editor">
+    <meta property="og:description" content="Create procedural and custom Stellaris galaxies with full visual editing tools.">
+    <meta property="og:image" content="images/example-shape.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0b0f16;
+            color: #d7e1f2;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #73b8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 56px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        h2 {
+            margin-top: 70px;
+            font-size: 36px;
+            color: #ffffff;
+            border-bottom: 2px solid #1f2a3b;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 40px;
+            font-size: 26px;
+            color: #ffffff;
+        }
+
+        p {
+            color: #c9d4e8;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #8cbcff;
+            margin-bottom: 30px;
+        }
+
+        .badges {
+            margin-top: 20px;
+        }
+
+        .badges img {
+            margin: 5px;
+        }
+
+        .download-box {
+            background: #121927;
+            border: 1px solid #263248;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 25px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #2c7be5;
+            color: white;
+            padding: 16px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background: #4892f0;
+            text-decoration: none;
+        }
+
+        .toc {
+            background: #121927;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #121927;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #8ec5ff;
+        }
+
+        .screenshot {
+            margin-top: 40px;
+        }
+
+        .screenshot img {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #1e293b;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        .screenshot-title {
+            margin-top: 15px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #263248;
+            padding: 14px;
+            text-align: left;
+        }
+
+        table th {
+            background: #182235;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #1a2333;
+            padding: 3px 7px;
+            border-radius: 5px;
+            color: #9fd0ff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 100px;
+            padding: 40px;
+            border-top: 1px solid #1e293b;
+            color: #7c8aa5;
+        }
+
+        .version-box {
+            background: #121927;
+            border-left: 5px solid #2c7be5;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .tips-box {
+            background: #101926;
+            border: 1px solid #25354f;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            h1 {
+                font-size: 42px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <section class="hero">
+        <h1>Stellaris Map Editor</h1>
+
+        <p class="subtitle">
+            Custom Galaxy Creation & Editing Toolkit for Stellaris
+        </p>
+
+        <img src="images/example-shape.png" alt="Stellaris Map Editor">
+
+        <div class="badges">
+            <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
+            <img src="https://img.shields.io/badge/Stellaris-4.3.7-orange">
+            <img src="https://img.shields.io/badge/version-1.0.4-green">
+        </div>
+    </section>
+
+    <section id="download">
+        <h2>Download</h2>
+
+        <div class="download-box">
+            <h3>Latest Release (v1.0.4)</h3>
+
+            <p>
+                Download the latest release of Stellaris Map Editor for Windows.
+            </p>
+
+            <a class="download-btn"
+               href="https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellaris_map_editor_v104.zip">
+                Download v1.0.4
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Galaxy Generation</h3>
+                <p>
+                    Generate procedural galaxies with advanced controls for size,
+                    density, spacing, and layout behavior.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Custom Shape Masks</h3>
+                <p>
+                    Import black-and-white PNG masks to create symbolic,
+                    geometric, or artistic galaxy layouts.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Hyperlane Editing</h3>
+                <p>
+                    Visually create, modify, and remove hyperlane connections
+                    between systems.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Wormholes & Gateways</h3>
+                <p>
+                    Add strategic infrastructure including gateways and
+                    paired wormholes.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Real-Time Preview</h3>
+                <p>
+                    View and modify galaxies live using an interactive
+                    visual editor.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Direct Mod Export</h3>
+                <p>
+                    Export playable Stellaris-compatible galaxy mods
+                    directly from the editor.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Table of Contents</h2>
+
+        <div class="toc">
+            <ul>
+                <li><a href="#quickstart">Quick Start</a></li>
+                <li><a href="#shapes">Custom Galaxy Shapes</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#editing">Editing Features</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#limitations">Known Limitations</a></li>
+                <li><a href="#history">Version History</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="quickstart">
+        <h2>Quick Start</h2>
+
+        <h3>1. Create a New Project</h3>
+        <p>
+            Launch the editor and create a new galaxy project.
+            The project name becomes the exported mod name.
+        </p>
+
+        <h3>2. Generate or Import a Galaxy Shape</h3>
+
+        <ul>
+            <li>Generate a procedural galaxy</li>
+            <li>Import a custom PNG mask shape (1024x1024)</li>
+        </ul>
+
+        <h3>3. Edit the Galaxy</h3>
+
+        <ul>
+            <li>Stars</li>
+            <li>Hyperlanes</li>
+            <li>Nebulas</li>
+            <li>Wormholes</li>
+            <li>Gateways</li>
+            <li>Clusters</li>
+        </ul>
+
+        <h3>4. Export the Galaxy</h3>
+
+        <p>
+            Export directly into a playable Stellaris mod format.
+        </p>
+    </section>
+
+    <section id="shapes">
+        <h2>Custom Galaxy Shapes</h2>
+
+        <p>
+            Stellaris Map Editor supports fully custom galaxy layouts using
+            black-and-white PNG mask images.
+        </p>
+
+        <ul>
+            <li>Symbols</li>
+            <li>Logos</li>
+            <li>Geometric patterns</li>
+            <li>Chokepoint maps</li>
+            <li>Artistic galaxy designs</li>
+            <li>Hand-drawn galaxy layouts</li>
+        </ul>
+
+        <h3>Mask Rules</h3>
+
+        <table>
+            <tr>
+                <th>Color</th>
+                <th>Result</th>
+            </tr>
+
+            <tr>
+                <td>Black</td>
+                <td>Valid galaxy generation area</td>
+            </tr>
+
+            <tr>
+                <td>White / Transparent</td>
+                <td>Empty space</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="screenshots">
+        <h2>Screenshots</h2>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Create a New Project</div>
+            <img src="images/screen0.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Import a Custom Shape</div>
+            <img src="images/screen0a.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Generate a Galaxy from a Shape</div>
+            <img src="images/screen1.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Load the Galaxy In-Game</div>
+            <img src="images/screen2.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Example Custom Galaxy</div>
+            <img src="images/screen3.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Advanced Galaxy Generation Settings</div>
+            <img src="images/screen5a.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Hyperlane Editing</div>
+            <img src="images/screen6.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Nebula Editing</div>
+            <img src="images/screen7.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Wormhole Editing</div>
+            <img src="images/screen8.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">Gateway Editing</div>
+            <img src="images/screen9.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">2000 Star Galaxy</div>
+            <img src="images/2000_stars.png">
+        </div>
+
+        <div class="screenshot">
+            <div class="screenshot-title">1000 Star Chokepoint Galaxy</div>
+            <img src="images/chokepoint_screenshot.png">
+        </div>
+    </section>
+
+    <section id="editing">
+        <h2>Editing Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Star Editing</h3>
+
+                <ul>
+                    <li>Create stars</li>
+                    <li>Move stars</li>
+                    <li>Rename stars</li>
+                    <li>Modify system data</li>
+                    <li>Configure planets and moons</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Hyperlane Editing</h3>
+
+                <ul>
+                    <li>Create hyperlanes</li>
+                    <li>Remove hyperlanes</li>
+                    <li>Quick system searching</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Nebula Editing</h3>
+
+                <ul>
+                    <li>Create nebulas</li>
+                    <li>Resize nebulas</li>
+                    <li>Reposition nebulas</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Wormhole Editing</h3>
+
+                <ul>
+                    <li>Create paired wormholes</li>
+                    <li>Configure endpoints</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Gateway Editing</h3>
+
+                <ul>
+                    <li>Add gateways</li>
+                    <li>Configure placements</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tips">
+        <h2>Tips</h2>
+
+        <div class="tips-box">
+
+            <h3>Planet Classes & Initializers</h3>
+
+            <p>
+                You can find valid planet classes and initializers on the
+                official Stellaris modding wiki:
+            </p>
+
+            <p>
+                <a href="https://productionwiki-stellaris.paradoxwikis.com/index.php?title=Empire_modding">
+                    Stellaris Empire Modding Wiki
+                </a>
+            </p>
+
+            <h3>Moving Objects</h3>
+
+            <p>
+                Zoom in using the mouse wheel for easier precision placement.
+            </p>
+
+            <h3>Panning the Map</h3>
+
+            <p>
+                Click and drag empty space to pan around the galaxy.
+            </p>
+
+            <h3>Searching for Systems</h3>
+
+            <p>
+                Repeatedly press a letter key inside dropdown fields to
+                quickly cycle through matching system names.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="limitations">
+        <h2>Known Limitations</h2>
+
+        <ul>
+            <li>Only stars can currently be moved directly on the canvas</li>
+            <li>Nebulas, wormholes, gateways, and hyperlanes are edited from their tabs</li>
+            <li>Very large galaxies may take longer to generate</li>
+            <li>Objects currently need to be reselected after editing</li>
+        </ul>
+    </section>
+
+    <section id="history">
+        <h2>Version History</h2>
+
+        <div class="version-box">
+            <h3>v1.0.4</h3>
+
+            <ul>
+                <li>Hyperlanes tab improvements</li>
+                <li>Auto-fills the To field when selecting a second star</li>
+                <li>Existing hyperlanes auto-select in the list</li>
+                <li>Delete Selected removes lanes between From and To</li>
+            </ul>
+        </div>
+
+        <div class="version-box">
+            <h3>v1.0.3</h3>
+
+            <ul>
+                <li>Fixed a y-axis bug when moving stars</li>
+            </ul>
+        </div>
+
+        <div class="version-box">
+            <h3>v1.0.2</h3>
+
+            <ul>
+                <li>Added Move Selected Star button</li>
+            </ul>
+        </div>
+
+        <div class="version-box">
+            <h3>v1.0.1</h3>
+
+            <ul>
+                <li>Selected objects now auto-center on the canvas</li>
+                <li>Improved visual highlights</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>
+            Created for the Stellaris modding community.
+        </p>
+
+        <p>
+            This project is provided as-is for personal and community use.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
