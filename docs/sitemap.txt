@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Main Page -->
+
+    <url>
+        <loc>https://non-npc.github.io/Stellaris-Map-Editor/</loc>
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/thumbnail.png
+            </image:loc>
+            <image:title>Stellaris Map Editor</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/example-shape.png
+            </image:loc>
+            <image:title>Example Shape</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen0.png
+            </image:loc>
+            <image:title>Create Project</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen0a.png
+            </image:loc>
+            <image:title>Import Custom Shape</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen1.png
+            </image:loc>
+            <image:title>Generate Galaxy</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen2.png
+            </image:loc>
+            <image:title>In Game Galaxy</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen3.png
+            </image:loc>
+            <image:title>Custom Galaxy Example</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen4.png
+            </image:loc>
+            <image:title>System Editing</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen5a.png
+            </image:loc>
+            <image:title>Advanced Galaxy Settings</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen6.png
+            </image:loc>
+            <image:title>Hyperlane Editing</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen7.png
+            </image:loc>
+            <image:title>Nebula Editing</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen8.png
+            </image:loc>
+            <image:title>Wormhole Editing</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/screen9.png
+            </image:loc>
+            <image:title>Gateway Editing</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/2000_stars.png
+            </image:loc>
+            <image:title>2000 Star Galaxy</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://non-npc.github.io/Stellaris-Map-Editor/images/chokepoint_screenshot.png
+            </image:loc>
+            <image:title>Chokepoint Galaxy</image:title>
+        </image:image>
+
+    </url>
+
+</urlset>
