@@ -1,5 +1,5 @@
 # Stellaris Map Editor
-https://non-npc.github.io/Stellaris-Map-Editor/
+ Official website: https://non-npc.github.io/Stellaris-Map-Editor/
 <p align="center">
   <img src="images/example-shape.png" width="700">
 </p>
