@@ -19,7 +19,7 @@
 
 # Download
 
-## Latest Release (v1.0.4)
+## Latest Release (v1.0.5)
 
 [Download Stellaris Map Editor v1.0.4](https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.5/Stellaris_map_editor_v105.zip)
 
