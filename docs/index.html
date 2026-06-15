@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stellaris Map Editor</title>
 
-    <meta name="description" content="Custom Galaxy Creation & Editing Toolkit for Stellaris. Design, generate, edit, and export fully customized Stellaris galaxy maps.">
+    <meta name="description" content="Custom Galaxy Creation & Editing Toolkit for Stellaris 4.4.1 Pegasus. Design, generate, edit, and export fully customized Stellaris galaxy maps.">
     <meta property="og:title" content="Stellaris Map Editor">
-    <meta property="og:description" content="Create procedural and custom Stellaris galaxies with full visual editing tools.">
+    <meta property="og:description" content="Create procedural and custom Stellaris 4.4.1 galaxies with full visual editing tools and mod export.">
     <meta property="og:image" content="images/thumbnail.png">
     <style>
         * {
@@ -249,15 +249,15 @@
         <h1>Stellaris Map Editor</h1>
 
         <p class="subtitle">
-            Custom Galaxy Creation & Editing Toolkit for Stellaris
+            Custom Galaxy Creation & Editing Toolkit for Stellaris 4.4.1 Pegasus
         </p>
 
         <img src="images/thumbnail.png" class="hero-image" alt="Stellaris Map Editor">
 
         <div class="badges">
             <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
-            <img src="https://img.shields.io/badge/Stellaris-4.3.7-orange">
-            <img src="https://img.shields.io/badge/version-1.0.4-green">
+            <img src="https://img.shields.io/badge/Stellaris-4.4.1-orange">
+            <img src="https://img.shields.io/badge/version-1.0.5-green">
         </div>
     </section>
 
@@ -265,15 +265,16 @@
         <h2>Download</h2>
 
         <div class="download-box">
-            <h3>Latest Release (v1.0.4)</h3>
+            <h3>Latest Release (v1.0.5)</h3>
 
             <p>
                 Download the latest Windows release of Stellaris Map Editor.
+                Exports target Stellaris <code>4.4.*</code> and are tested against game version <strong>4.4.1</strong>.
             </p>
 
             <a class="download-btn"
-               href="https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.4/Stellaris_map_editor_v104.zip">
-                Download Stellaris Map Editor v1.0.4
+               href="https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.5/Stellaris_map_editor_v105.zip">
+                Download Stellaris Map Editor v1.0.5
             </a>
         </div>
     </section>
@@ -310,7 +311,7 @@
             <div class="feature-card">
                 <h3>Mod Exporting</h3>
                 <p>
-                    Export fully playable Stellaris-compatible galaxy mods
+                    Export fully playable Stellaris 4.4-compatible galaxy mods
                     directly from the editor.
                 </p>
             </div>
@@ -365,7 +366,8 @@
         <h3>4. Export the Galaxy</h3>
 
         <p>
-            Export directly into a playable Stellaris mod format.
+            Export directly into a playable Stellaris mod format for version 4.4.1.
+            In New Game setup, choose <strong>Galaxy Shape: Elliptical</strong>, then select your exported scenario.
         </p>
     </section>
 
@@ -620,6 +622,20 @@
 
     <section id="history">
         <h2>Version History</h2>
+
+        <div class="version-box">
+            <h3>v1.0.5</h3>
+
+            <ul>
+                <li>Stellaris 4.4.1 Pegasus compatibility update</li>
+                <li>Default export target updated to <code>4.4.*</code></li>
+                <li>Fixed invalid <code>core_cluster</code> galaxy shape in exported scenarios</li>
+                <li>Fixed gateway spawn syntax for Stellaris 4.4 export</li>
+                <li>Fixed generated system initializers exceeding Stellaris system size limits</li>
+                <li>Removed Fallen Empires and Marauders from Project Settings (generator controls these)</li>
+                <li>Added validation warnings for nebulas, wormholes, and gateways</li>
+            </ul>
+        </div>
 
         <div class="version-box">
             <h3>v1.0.4</h3>
