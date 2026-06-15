@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-  <b>Custom Galaxy Creation & Editing Toolkit for Stellaris</b><br>
+  <b>Custom Galaxy Creation & Editing Toolkit for Stellaris 4.4.1 Pegasus</b><br>
   Design, generate, edit, and export fully customized Stellaris galaxy maps with complete visual control.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
-  <img src="https://img.shields.io/badge/Stellaris-4.3.7-orange">
-  <img src="https://img.shields.io/badge/version-1.0.4-green">
+  <img src="https://img.shields.io/badge/Stellaris-4.4.1-orange">
+  <img src="https://img.shields.io/badge/version-1.0.5-green">
 </p>
 
 ---
@@ -21,7 +21,9 @@
 
 ## Latest Release (v1.0.5)
 
-[Download Stellaris Map Editor v1.0.4](https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.5/Stellaris_map_editor_v105.zip)
+Exports target Stellaris `4.4.*` and are tested against game version **4.4.1**.
+
+[Download Stellaris Map Editor v1.0.5](https://github.com/non-npc/Stellaris-Map-Editor/releases/download/v1.0.5/Stellaris_map_editor_v105.zip)
 
 ---
 
@@ -37,7 +39,7 @@
 - Star system editing
 - Advanced galaxy generation settings
 - Real-time visual galaxy preview
-- Export directly into Stellaris-compatible mod format
+- Export directly into Stellaris 4.4-compatible mod format
 - Supports symbolic and geometric galaxy layouts
 - Automatic galaxy scaling based on star count and galaxy size
 
@@ -64,7 +66,7 @@
 
 # Stellaris Version
 
-- Stellaris 4.3.7
+- Stellaris 4.4.1 Pegasus (`4.4.*` export target)
 
 ---
 
@@ -93,7 +95,8 @@ Modify:
 
 ## 4. Export the Galaxy
 
-Export directly into a playable Stellaris mod format.
+Export directly into a playable Stellaris mod format for version 4.4.1.
+In New Game setup, choose **Galaxy Shape: Elliptical**, then select your exported scenario.
 
 ---
 
@@ -350,6 +353,16 @@ Example:
 ---
 
 # Version History
+
+## v1.0.5
+
+- Stellaris 4.4.1 Pegasus compatibility update
+- Default export target updated to `4.4.*`
+- Fixed invalid `core_cluster` galaxy shape in exported scenarios
+- Fixed gateway spawn syntax for Stellaris 4.4 export
+- Fixed generated system initializers exceeding Stellaris system size limits
+- Removed Fallen Empires and Marauders from Project Settings (generator controls these)
+- Added validation warnings for nebulas, wormholes, and gateways
 
 ## v1.0.4
 
