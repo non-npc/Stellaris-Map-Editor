@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-  <b>Custom Galaxy Creation & Editing Toolkit for Stellaris 4.4.1 Pegasus</b><br>
+  <b>Custom Galaxy Creation & Editing Toolkit for Stellaris 4.4.* Pegasus</b><br>
   Design, generate, edit, and export fully customized Stellaris galaxy maps with complete visual control.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue">
-  <img src="https://img.shields.io/badge/Stellaris-4.4.1-orange">
+  <img src="https://img.shields.io/badge/Stellaris-4.4.*-orange">
   <img src="https://img.shields.io/badge/version-1.0.5-green">
 </p>
 
@@ -66,7 +66,7 @@ Exports target Stellaris `4.4.*` and are tested against game version **4.4.1**.
 
 # Stellaris Version
 
-- Stellaris 4.4.1 Pegasus (`4.4.*` export target)
+- Stellaris 4.4.* Pegasus (`4.4.*` export target)
 
 ---
 
@@ -95,7 +95,7 @@ Modify:
 
 ## 4. Export the Galaxy
 
-Export directly into a playable Stellaris mod format for version 4.4.1.
+Export directly into a playable Stellaris mod format for version 4.4.*.
 In New Game setup, choose **Galaxy Shape: Elliptical**, then select your exported scenario.
 
 ---
@@ -356,7 +356,7 @@ Example:
 
 ## v1.0.5
 
-- Stellaris 4.4.1 Pegasus compatibility update
+- Stellaris 4.4.* Pegasus compatibility update
 - Default export target updated to `4.4.*`
 - Fixed invalid `core_cluster` galaxy shape in exported scenarios
 - Fixed gateway spawn syntax for Stellaris 4.4 export
